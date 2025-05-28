@@ -1,9 +1,9 @@
 /* General Styling */
 :root {
-    --primary-color: #fff¡;
+    --primary-color: #fff;
     --text-color: #222;
     --secondary-color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --accent-color: #f48c06;
     font-size: 20px;
 }
 
@@ -31,28 +31,39 @@
 }
 
 body {
-    font-family: 'Nohemi-Regular';
+    font-family: 'Nohemi-Regular', Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
     background-color: var(--primary-color);
 }
 
 /* nav section */
+header {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    color: var(--accent-color)
+}
+
 nav {
+    width: 100%;
     position: sticky;
+    top: 0px;
+    background-color: var(--primary-color);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
 }
 
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;  
+    list-style-type: none; 
 }
 
-nav li {
-    display: inline;
-}
-
-nav li:first-child {
-    margin-right: auto;
-}
 
 nav li a{
     color: var(--text-color);
@@ -63,4 +74,26 @@ nav li a{
 #logo {
     width: 64px;
     height: 64px;
+}
+
+#header-img {
+    margin-top: 2rem;
+    width: 255px;
+    height: 255px;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 80%;
+}
+
+#menu {
+    background-color: var(--secondary-color);
+    text-align: center;
+
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2)
 }
