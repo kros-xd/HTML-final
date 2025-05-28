@@ -1,6 +1,6 @@
 /* General Styling */
 :root {
-    --primary-color: #f8f8f8;
+    --primary-color: #fff¡;
     --text-color: #222;
     --secondary-color: #eeeeee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -37,17 +37,30 @@ body {
 }
 
 /* nav section */
+nav {
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
 nav li {
     display: inline;
+}
+
+nav li:first-child {
+    margin-right: auto;
 }
 
 nav li a{
     color: var(--text-color);
     text-decoration: none;
-    margin: 10px;
+    margin: 15px;
 }
 
 #logo {
-    width: 15%;
-    height: 15%;
+    width: 64px;
+    height: 64px;
 }
