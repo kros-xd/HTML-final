@@ -1,0 +1,66 @@
+/* General Styling */
+:root {
+    --primary-color: #fff¡;
+    --text-color: #222;
+    --secondary-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Custom Fonts */
+@font-face {
+    font-family: 'Nohemi-Regular';
+    src: url('./assets/fonts/Nohemi-Regular.ttf') format(TrueType); /* Regular font type */
+}
+@font-face {
+    font-family: 'Nohemi-B';
+    src: url('./assets/fonts/Nohemi-Bold.ttf') format(TrueType); /* Bolder */
+}
+@font-face {
+    font-family: 'Nohemi-M';
+    src: url('./assets/fonts/Nohemi-Medium.ttf') format(TrueType); /* Medium font type */
+}
+@font-face {
+    font-family: 'Nohemi-T';
+    src: url('./assets/fonts/Nohemi-Thin.ttf') format(TrueType); /* Thin font type */
+}
+
+body {
+    font-family: 'Nohemi-Regular';
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+/* nav section */
+nav {
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 15px;
+}
+
+#logo {
+    width: 64px;
+    height: 64px;
+}
