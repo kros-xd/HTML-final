@@ -1,0 +1,35 @@
+:root {
+    @font-face {
+        font-family: 'CustomFont';
+        src: url('fonts/CustomFont.woff2') format('TrueType');
+        font-weight: normal;
+        font-style: normal;
+    }
+    --primary-color: #3498db; /* Primary color for the theme */
+    --secondary-color: #2ecc71; /* Secondary color for the theme */
+    --background-color: #f4f4f4; /* Background color for the page */
+    --text-color: #333; /* Default text color */
+}
+
+* {
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+/* svg things */
+#background svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
