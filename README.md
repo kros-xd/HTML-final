@@ -49,18 +49,3 @@ Your HTML page should include the following:
 Style your page using:
 - Inline `style` attributes or a `<style>` element.
 - Revisit the “Power Rangers” challenge for inspiration.
-
----
-
-## 📁 File Structure
-
-```
-html_final/
-├── restaurant_menu.html
-└── README.md
-```
-
----
-
-## 🚀 How to View
-Open `restaurant_menu.html` in your browser to see the restaurant menu and place an order.
