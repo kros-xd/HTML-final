@@ -1,8 +1,8 @@
 # HTML Final Project – Restaurant Menu 🍽️
 
-This repository contains my submission for the [Codédex](https://www.codedex.io) HTML Final Project. The goal is to build a fully functional **restaurant menu webpage** that includes a form for placing an order.
+This repository contains my submission for the [Codédex](https://www.codedex.io) HTML Final Project. The goal is to test one's proficiency in HTML by demonstrating what they've learned through a project.
 
-## 📄 Project Description
+## 📄 Project Instructions (These are for me and not important to anyone else lol)
 
 Create a file named `restaurant_menu.html` and build a fictional or real restaurant page. Be creative with the restaurant's name, theme, and menu items!
 
@@ -43,9 +43,9 @@ Your HTML page should include the following:
 - A `<footer>` with a `<p>` that reads:  
   `Made with love by [Your Codédex Username]`.
 
----
-
 ## ✨ Bonus
 Style your page using:
-- Inline `style` attributes or a `<style>` element.
+- Inline `style` attributes or a `<style>` element. (I used external css)
 - Revisit the “Power Rangers” challenge for inspiration.
+
+LIVE WEBSITE: [Cozy Cove Cafe](codedex-html-final.vercel.app)
