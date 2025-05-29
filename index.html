@@ -8,6 +8,7 @@
         <meta name="description" content="Explore our caffinated menu!">
         <meta name="keywords" content="coffee menu, restaurant menu, food, drinks, coffee shop">
         <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="icon" href="./assets/icon/favicon-32x32.png" type="image/x-icon">
     </head>
     <body>
         <header>
@@ -79,10 +80,10 @@
                         <input id="drip-coffee" name="drip-coffee" type="number" value="0" min="0" max="50">
                         <br>
                         <div class="attribute-container">
-                            <input id="cream" name="drip-coffee" type="checkbox">
+                            <input id="cream" name="drip-options[]" type="checkbox">
                             <label for="cream"> cream </label>
                             <br>
-                            <input id="sugar" name="drip-coffee" type="checkbox">
+                            <input id="sugar" name="drip-options[]" type="checkbox">
                             <label for="sugar"> sugar </label>
                         </div>  
                     </div>
@@ -119,7 +120,7 @@
                         </div>
                     </div>
                     <hr>
-                    <h6> Special Requests </h6>
+                    <h3> Special Requests </h3>
                     <textarea name="special-requests" rows="2" cols="30" placeholder="i.e. Made with Oat Milk please! :D"></textarea>
                     <br>
                     <button type="submit"> Go To Checkout </button>
