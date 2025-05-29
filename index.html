@@ -26,82 +26,108 @@
                     </li>
                 </ul>
             </nav>
-            
-            <img id="header-img" src="./assets/images/barista.png" alt="barista logo">
-            
-            <h1> Cozy Cove Coffee </h1>
+            <div id="header-container">
+                <img id="header-img" src="./assets/images/barista.png" alt="barista logo">
+                <h1> Cozy Cove Coffee </h1>
+            </div>
         </header>
+
         <main>
             <section id="menu">
 
                 <h2> Menu </h2>
-
+                <hr>
                 <article>
-                    <img src="./assets/images/coffee-pot.png" alt="drip coffee pot" width="32px" height="32px">
-                    <h3> Drip Coffee </h3>
-                    <p>
-                        Desc. w/ price in italics
+                    <div class="menu-content">
+                        <img src="./assets/images/coffee-pot.png" alt="drip coffee pot" width="32" height="32">
+                        <h3> Drip Coffee | <i>$3.25</i> </h3>
+                    </div>
+                    <p class="menu-description">
+                        Hot water slowly dripped through ground coffee beans in a filter, extracting the coffee's flavors and aromas.
                     </p>
                 </article>
 
                 <article>
-                    <img src="./assets/images/coffee.png" alt="hot latte" width="32px" height="32px">
-                    <h3> Hot Latte </h3>
-                    <p>
-                        Desc. w/ price in italics
+                    <div class="menu-content">
+                        <img src="./assets/images/coffee.png" alt="hot latte" width="32" height="32">
+                        <h3> Hot Latte | <i>$4.25</i> </h3> 
+                    </div>
+                    <p class="menu-description">
+                        A delicious drink that combines espresso and smoothly aerated milk.
                     </p>
                 </article>
 
                 <article>
-                    <img src="./assets/images/ice-coffee.png" alt="iced latte" width="32px" height="32px">
-                    <h3> Iced Latte </h3>
-                    <p>
-                        Desc. w/ price in italics
+                    <div class="menu-content">
+                        <img src="./assets/images/ice-coffee.png" alt="iced latte" width="32" height="32">
+                        <h3> Iced Latte | <i>$4.25</i> </h3>
+                    </div>
+                    <p class="menu-description">
+                        A nice cold cup of milk topped with espresso and served with premium ice.
                     </p>
                 </article>
-
+  
             </section>
 
             <section id="order-form">
 
                 <h2> Place Your Order </h2>
                 <form action="#" method="post"> <!-- not really using a database -->
-
+                    <hr>
                     <div class="coffee-items">
                         <label for="drip-coffee"> Drip Coffee | Amount:</label>
-                        <input id="drip-coffee" name="coffee-type" type="number" value="0" min="0" max="50">
-                        <label for="cream"> cream </label>
-                        <input id="cream" name="coffee-type" type="checkbox">
-                        <label for="sugar"> sugar </label>
-                        <input id="sugar" name="coffee-type" type="checkbox">
+                        <input id="drip-coffee" name="drip-coffee" type="number" value="0" min="0" max="50">
+                        <br>
+                        <div class="attribute-container">
+                            <input id="cream" name="drip-coffee" type="checkbox">
+                            <label for="cream"> cream </label>
+                            <br>
+                            <input id="sugar" name="drip-coffee" type="checkbox">
+                            <label for="sugar"> sugar </label>
+                        </div>  
                     </div>
-
+                    <hr>
                     <div class="coffee-items">
-                        <label for="iced-latte"> Iced Lattes | Amount:</label>
-                        <input id="iced-latte" type="number" name="coffee-type" value="0" min="0" max="0">
-                        <label for="x-ice"> x-ice </label>
-                        <input id="x-ice" name="coffee-type" type="radio">
-                        <label for="light-ice"> light ice </label>
-                        <input id="light-ice" name="coffee-type" type="radio">
+                        <label for="iced-latte"> Iced Latte | Amount:</label>
+                        <input id="iced-latte" type="number" name="iced-coffee" value="0" min="0" max="50">
+                        <br>
+                        <div class="attribute-container">
+                            <input id="regular-ice" name="iced-coffee" type="radio" checked>
+                            <label for="regular-ice"> regular ice </label>
+                            <br>
+                            <input id="x-ice" name="iced-coffee" type="radio">
+                            <label for="x-ice"> x-ice </label>
+                            <br>
+                            <input id="light-ice" name="iced-coffee" type="radio">
+                            <label for="light-ice"> light ice </label>
+                        </div>
                     </div>
-
+                    <hr>
                     <div class="coffee-items">
-                        <label for="hot-latte"> Hot Lattes | Amount:</label>
-                        <input id="hot-latte" type="number" name="coffee-type" value="0" min="0" max="0">
-                        <label for="x-hot"> x-hot </label>
-                        <input id="x-hot" name="coffee-type" type="radio">
-                        <label for="kid-temp"> kid temp </label>
-                        <input id="kid-temp" name="coffee-type" type="radio">
+                        <label for="hot-latte"> Hot Latte | Amount:</label>
+                        <input id="hot-latte" type="number" name="hot-coffee" value="0" min="0" max="50">
+                        <br>
+                        <div class="attribute-container">
+                            <input id="regular-temp" name="hot-coffee" type="radio" checked>
+                            <label for="regular-temp"> regular temp </label>
+                            <br>
+                            <input id="x-hot" name="hot-coffee" type="radio">
+                            <label for="x-hot"> x-hot </label>
+                            <br>
+                            <input id="kid-temp" name="hot-coffee" type="radio">
+                            <label for="kid-temp"> kid temp </label>
+                        </div>
                     </div>
-
-                    <textarea name="special-requests" rows="4" cols="30" placeholder="i.e. Made with Oat Milk please! :D"></textarea>
+                    <hr>
+                    <h6> Special Requests </h6>
+                    <textarea name="special-requests" rows="2" cols="30" placeholder="i.e. Made with Oat Milk please! :D"></textarea>
+                    <br>
                     <button type="submit"> Go To Checkout </button>
 
                 </form>
-
             </section>
-
         </main>
+
         <footer>
             <br>
             <ul>
@@ -112,7 +138,7 @@
                     <a href="index.html#order-form"> Order </a>
                 </li>
             </ul>
-            <p> Made with love by @kros </p>
+            <p> Made with love by kros </p>
         </footer>
     </body>
 </html>
