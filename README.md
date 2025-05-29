@@ -48,4 +48,4 @@ Style your page using:
 - Inline `style` attributes or a `<style>` element. (I used external css)
 - Revisit the “Power Rangers” challenge for inspiration.
 
-LIVE WEBSITE: [Cozy Cove Cafe](codedex-html-final.vercel.app)
+LIVE WEBSITE: [Cozy Cove Cafe](https://codedex-html-final.vercel.app/)
