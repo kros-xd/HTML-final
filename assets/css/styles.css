@@ -1,9 +1,10 @@
 /* General Styling */
 :root {
-    --primary-color: #fff¡;
+    --primary-color: #fff;
     --text-color: #222;
-    --secondary-color: #eeeeee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --secondary-color: #ffe0b7;
+    --accent-color: #f48c06;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
@@ -14,53 +15,175 @@
 
 /* Custom Fonts */
 @font-face {
-    font-family: 'Nohemi-Regular';
-    src: url('./assets/fonts/Nohemi-Regular.ttf') format(TrueType); /* Regular font type */
+    font-family: 'HK-Bold';
+    src: url('./assets/fonts/HKGrotesk-Bold.ttf') format(TrueType); /* Regular font type */
 }
 @font-face {
-    font-family: 'Nohemi-B';
-    src: url('./assets/fonts/Nohemi-Bold.ttf') format(TrueType); /* Bolder */
-}
-@font-face {
-    font-family: 'Nohemi-M';
-    src: url('./assets/fonts/Nohemi-Medium.ttf') format(TrueType); /* Medium font type */
-}
-@font-face {
-    font-family: 'Nohemi-T';
-    src: url('./assets/fonts/Nohemi-Thin.ttf') format(TrueType); /* Thin font type */
+    font-family: 'HK-Regular';
+    src: url('./assets/fonts/HKGrotesk-Regular.ttf') format(TrueType); /* Bolder */
 }
 
 body {
-    font-family: 'Nohemi-Regular';
+    text-wrap: balance;
+    font-family: 'HK-Regular';
     height: 100vh;
     background-color: var(--primary-color);
+    color: var(--text-color)
 }
 
 /* nav section */
+header {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: var(--accent-color);
+    font-family: 'HK-Regular';
+}
+
 nav {
-    position: sticky;
+    width: 100%;
+
+    position: fixed;
+    top: 0px;
+    
+    background-color: var(--primary-color);
+
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1)
 }
 
 nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;  
+    list-style-type: none; 
 }
 
-nav li {
-    display: inline;
-}
-
-nav li:first-child {
-    margin-right: auto;
-}
 
 nav li a{
     color: var(--text-color);
     text-decoration: none;
     margin: 15px;
+    transition: ease-out 0.4s;
+}
+
+nav li a:hover {
+    color: var(--accent-color);
+    transition: ease-in 0.2s;
 }
 
 #logo {
     width: 64px;
     height: 64px;
+}
+
+#header-container {
+
+    text-align: center;
+
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    
+    width: 30vw;
+    font-size: 2vw;
+}
+
+#header-img {
+    object-fit: contain;
+    width: 100%;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Menu Section */
+#menu {
+    padding: 10px;
+    margin: 10px;
+
+    text-align: center;
+    width: 50%;
+    background-color: var(--secondary-color);
+
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2)
+}
+
+#menu article {
+    margin: 2rem;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content img {
+    margin-right: 10px;
+}
+
+/* Order Section */
+#order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    margin: 10px;
+
+    text-align: center;
+    width: 50%;
+    background-color: var(--secondary-color);
+
+    border-radius: 15px;
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2)
+}
+
+.coffee-items {
+    text-align: left;
+    margin: 2rem;
+}
+
+.attribute-container {
+    text-align: left;
+}
+
+#order-form textarea {
+    font-family: 'HK-Regular';
+    text-align: center;
+    text-wrap: balance;
+    padding: 5px;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    font-size: small;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    margin: 15px;
+    color: var(--accent-color);
+    transition: ease-out 0.4s;
+}
+
+footer a:hover {
+    color: var(--text-color);
+    transition: ease-in 0.2s;
 }
