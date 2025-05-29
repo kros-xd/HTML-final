@@ -118,11 +118,12 @@ main {
 
 #menu article {
     margin: 2rem;
+    text-align: left;
 }
 
 .menu-content {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
